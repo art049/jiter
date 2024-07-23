@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 import json
-from random import random
+from random import random, seed
 from pathlib import Path
 
 THIS_DIR = Path(__file__).parent
+
+seed(0)
 
 data = []
 no_strings = True
