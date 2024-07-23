@@ -192,6 +192,7 @@ jobs:
       with:
         run: cargo codspeed run
         token: ${{ secrets.CODSPEED_TOKEN }}
+        upload-url: ${{ vars.CODSPEED_UPLOAD_URL }}
 
   fuzz:
     name: fuzz on ${{ matrix.runs-on }}
